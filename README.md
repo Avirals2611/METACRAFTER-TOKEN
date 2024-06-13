@@ -2,28 +2,28 @@
 Metacrafters assessment of Eth-Proof course
 
 ## Description
-This is the assessment of a course called Eth-Proof provided to us by Metacrafters which is a multichain learn and earn platform. In this course, we learned about different blockchain concepts and started our journey in field of blockchain by laying the foundation in solidity. 
+The evaluation is of Eth-Proof course offered by Metacrafters, a multi-chain learn and earn platform. Throughout this course, we have studied various blockchain concepts and began our exploration of the blockchain industry by establishing a base in solidity.
 
 ## Getting Started
 ### Installing
-      * Open remix.ethereum.org (a online code editor for solidity by ethereum)
-      * Open EthProof.sol given in this repository.
-      * Copy the code
-      * Now, set up is complete and you are good to go.
+      * Access remix.ethereum.org,
+      * Access the website remix.ethereum.org, which is an internet-based code editor specifically for writing solidity code for Ethereum.
+      * Duplicate the code.
+      * Now that the setup is finished, you can proceed.
+
       
 ### Executing Program
-      After set up
-      * Compile the program by using solidity compiler given in the sidebar (or you can use CTRL + S).
-      * In the sidebar, if you get green check mark, this means your program executed successfully.
-      * Deploy the program
-      * Run and execute all the function/method which is present in the contract
-
+Following installation.
+*Use the solidity compiler provided on the sidebar or press CTRL + S to compile the program.
+*If you see a green check mark in the sidebar, it indicates that your program ran without any errors.
+*Implement or launch the program
+*Execute all the functions/methods within the contract by running them.
 ## Help
-      * You can use CTRL + S to compile
+      * CTRL + S can be utilized for compiling.
 
 ## Authors
 Aviral Singh
 
 ## License
-This project is licensed under the Alok Raturi License.
-      
+This project is under the licensing of Aviral Singh.
+
