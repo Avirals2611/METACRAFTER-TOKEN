@@ -1,40 +1,27 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.18;
-
+pragma solidity 0.8.26;
 
 contract MyToken {
 
-    // Public variables to store token details
-    string public tokenName;
-    string public tokenAbbrv;
-    uint256 public totalSupply;
+    // public variables here
+    string public tokenName="TOKENS";
+    string public tokenAbbrv="TKS";
+    uint public totalSupply=0;
 
-    // Mapping from address to balance
-    mapping(address => uint256) public balances;
+    // mapping variable here
+    mapping(address=>uint) public acBalance;
 
-    // Constructor to initialize the token details
-    constructor(string memory _tokenName, string memory _tokenAbbrv) {
-        tokenName = _tokenName;
-        tokenAbbrv = _tokenAbbrv;
-        totalSupply = 0; // Initial total supply is 0
+    // mint function
+    function mint(address _address, uint _value) public{
+        totalSupply+=_value;
+        acBalance[_address]+= _value;
     }
 
-    // Function to mint new tokens
-    function mint(address _to, uint256 _amount) public {
-        // Increase the total supply by the minted amount
-        totalSupply += _amount;
-        // Increase the balance of the specified address
-        balances[_to] += _amount;
-    }
-
-    // Function to burn tokens
-    function burn(address _from, uint256 _amount) public {
-        // Check if the balance of the sender is enough to burn the specified amount
-        require(balances[_from] >= _amount, "Insufficient balance to burn");
-
-        // Decrease the total supply by the burned amount
-        totalSupply -= _amount;
-        // Decrease the balance of the specified address
-        balances[_from] -= _amount;
+    // burn function
+    function burn(address _address, uint _value) public{
+        if(acBalance[_address]>= _value){
+            totalSupply-=_value;
+            acBalance[_address]-=_value;
+        }
     }
 }
