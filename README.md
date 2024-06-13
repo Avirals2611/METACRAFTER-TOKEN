@@ -1,5 +1,6 @@
 # Project Title
-Metacrafters assessment of Eth-Proof course
+Evaluation of Eth-Proof course by Metacrafters
+
 
 ## Description
 The evaluation is of Eth-Proof course offered by Metacrafters, a multi-chain learn and earn platform. Throughout this course, we have studied various blockchain concepts and began our exploration of the blockchain industry by establishing a base in solidity.
