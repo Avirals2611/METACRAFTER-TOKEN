@@ -4,8 +4,8 @@ pragma solidity 0.8.26;
 contract MyToken {
 
     // public variables here
-    string public tokenName="TOKENS";
-    string public tokenAbbrv="TKS";
+    string public tokenName="METCOINS";
+    string public tokenAbbrv="MTC";
     uint public totalSupply=0;
 
     // mapping variable here
